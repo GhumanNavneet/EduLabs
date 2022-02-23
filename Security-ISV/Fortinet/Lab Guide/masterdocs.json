@@ -1,0 +1,13 @@
+[
+  {
+    "Name": "Fortinet WAF on Azure",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-Samples/EduLabs/tree/main/Security-ISV",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/GhumanNavneet/EduLabs/main/Security-ISV/Fortinet/Lab%20Guide/fortinet_on_azure.md",
+        "Order": 1
+      }
+    ]
+  }
+]
