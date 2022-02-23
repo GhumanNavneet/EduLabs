@@ -48,7 +48,7 @@
   "variables": {
     "fortinetVmSize": "Standard_F2s_v2",
     "webVmSize": "Standard_F2s_v2",
-    "storageAccountType": "Standard_LRS",
+    "storageAccountType": "Premium_LRS",
     "diagStorageAccountName": "[concat('diagstorage',uniqueString(resourceGroup().id))]",
     "virtualNetworkName": "fortinet-vnet",
     "webNSGName": "web-NSG",
@@ -98,17 +98,19 @@
           "resources": []
         }
       }
-    },
+    },    
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[variables('diagStorageAccountName')]",
       "apiVersion": "2016-01-01",
       "location": "[resourceGroup().location]",
+      "comments": "Storage account used to store VM diagnostics data",
       "sku": {
-        "name": "[variables('storageAccountType')]"
+        "name": "Standard_LRS"
       },
       "kind": "Storage",
-      "properties": {}
+      "properties": {
+      }
     },
     {
       "type": "Microsoft.Network/networkSecurityGroups",
