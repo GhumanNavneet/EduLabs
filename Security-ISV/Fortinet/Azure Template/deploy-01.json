@@ -557,7 +557,7 @@
       },
       "location": "[resourceGroup().location]",
       "plan": {
-        "name": "fortinet_fw-vm",
+        "name": "fortinet_fw-vm_payg",
         "publisher": "fortinet",
         "product": "fortinet_fortiweb-vm_v5"
       },
