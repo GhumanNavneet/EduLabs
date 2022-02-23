@@ -557,9 +557,9 @@
       },
       "location": "[resourceGroup().location]",
       "plan": {
-        "name": "fortinet_fw-vm_payg",
-        "publisher": "fortinet",
-        "product": "fortinet_fortiweb-vm_v5"
+           "name": "fpx-vm-byol",
+           "publisher": "fortinet",
+           "product": "fortinet-fortiproxy"
       },
       "dependsOn": [
         "[variables('fortinetVmNicName')]"
@@ -575,10 +575,10 @@
         },
         "storageProfile": {
           "imageReference": {
-            "publisher": "fortinet",
-            "offer": "fortinet_fortiweb-vm_v5",
-            "sku": "fortinet_fw-vm",
-            "version": "latest"
+                  "publisher": "fortinet",
+                  "offer": "fortinet-fortiproxy",
+                  "sku": "fpx-vm-byol",
+                  "version": "latest"
           },
           "osDisk": {
             "createOption": "FromImage"
